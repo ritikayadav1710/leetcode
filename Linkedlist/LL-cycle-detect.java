@@ -20,4 +20,17 @@ public class Solution {
         }
         return false;
     }
-}
+} //optimal TC:O(n), SC:O(1)
+
+//bruteforce TC:O(n), SC:O(n)
+// public class Solution {
+//     public boolean hasCycle(ListNode head) {
+//         HashSet<ListNode> set=new HashSet<>();
+//         while(head!=null){
+//             if(set.contains(head)) return true;
+//             set.add(head);
+//             head=head.next;
+//         }
+//         return false;
+//     }
+// }
